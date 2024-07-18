@@ -5,6 +5,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'Open-Sans': ['Open Sans', 'sans-serif'],
+      'Cormorant': ['Cormorant Upright', 'serif'],
+    },
     extend: {},
   },
   plugins: [],

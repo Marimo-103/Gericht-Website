@@ -1,13 +1,46 @@
 import React from 'react'
 import Container from '../Layers/Container'
-
+import Logo from '../Layers/Logo'
+import Logo_img from '/Common Images/Logo.png'
+import { Link } from 'react-router-dom'
+import Li from '../Layers/Li'
+import HoverUL from '../Layers/HoverUL'
+import HoverLi from '../Layers/HoverLi'
+import { MdRestaurantMenu } from "react-icons/md";
 const Navbar = () => {
   return (
     <nav>
-      <Container className='flex justify-between items-center'>
-        <div className="logo">logo</div>
-        <div className="logo">menu</div>
-        <div className="logo">button</div>
+      <Container className='max-w-[1440px] sm:py-8 sm:px-[0px] p-4 flex justify-between items-center'>
+        <Logo src={Logo_img} />
+        <div className="menu">
+          <ul className='sm:flex gap-x-8 hidden'>
+            <Li value='Home' to='/' />
+            <Li value='Pages' to='/' className='relative group'>
+              <HoverUL>
+                <HoverLi value='About Us' to='/about' />
+                <HoverLi value='Services' to='/service' />
+                <HoverLi value='Our Team' to='/team' />
+                <HoverLi value='Our Blog' to='/blog' />
+                <HoverLi value='FAQ' to='/FAQ' />
+              </HoverUL>
+            </Li>
+            <Li value='Contact Us' to='/contact' />
+            <Li value='Blog' to='/blog' />
+            <Li value='Landing' to='/404' />
+          </ul>
+        </div>
+        <div className="btns hidden sm:flex gap-[50px] items-center text-white">
+          <div className="user text-base text-white font-Open-Sans font-semibold leading-[175%] tracking-[0.8px] capitalize transition-all duration-300 hover:text-[#DCCA87]">
+            <Link to='/login' className=''>Log in </Link>
+            / 
+            <Link to='/login' className=''> registration</Link>
+          </div>
+          <div className="line bg-gradient-to-b from-black via-white to-black w-[1px] h-[57px]"></div>
+          <div className="table">
+          <Link to='' className='text-base text-white font-Open-Sans font-semibold leading-[175%] tracking-[0.8px] capitalize transition-all duration-300 hover:text-[#DCCA87]'>book table </Link>
+          </div>
+        </div>
+        <MdRestaurantMenu className='sm:hidden text-[#DCCA87] text-lg hover:text-white transition-all duration-300' />
       </Container>
     </nav>
   )
