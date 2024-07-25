@@ -1,8 +1,15 @@
 import React from 'react'
+import Container from '../Layers/Container'
+import Rotating from './Rotating'
+
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer className='bg-Masked-bg p-20'>
+      <Container>
+        
+      </Container>
+    </footer>
   )
 }
 
