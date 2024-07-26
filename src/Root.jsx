@@ -10,6 +10,7 @@ const Root = () => {
 
         <Outlet />
 
+        <div className='pt-[334px]'></div>
         <Footer />
     </div>
   )

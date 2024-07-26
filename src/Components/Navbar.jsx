@@ -7,6 +7,9 @@ import Li from '../Layers/Li'
 import HoverUL from '../Layers/HoverUL'
 import HoverLi from '../Layers/HoverLi'
 import { MdRestaurantMenu } from "react-icons/md";
+import line from '/Common Images/Menu_line.png'
+
+
 const Navbar = () => {
   return (
     <nav>
@@ -35,7 +38,9 @@ const Navbar = () => {
             / 
             <Link to='/login' className=''> registration</Link>
           </div>
-          <div className="line bg-gradient-to-b from-black via-white to-black w-[1px] h-[57px]"></div>
+          <div className="line w-[2px] h-[57px]">
+            <img src={line} alt="" className='h-full'/>
+          </div>
           <div className="table">
           <Link to='' className='text-base text-white font-Open-Sans font-semibold leading-[175%] tracking-[0.8px] capitalize transition-all duration-300 hover:text-[#DCCA87]'>book table </Link>
           </div>

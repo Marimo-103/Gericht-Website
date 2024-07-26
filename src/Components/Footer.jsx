@@ -1,19 +1,29 @@
 import React from 'react'
 import Container from '../Layers/Container'
-import H2 from '../Layers/H2'
 import H3 from '../Layers/H3'
 import P from '../Layers/P'
 import Spoon from './Spoon'
 import { Link } from 'react-router-dom'
 import { FaFacebookF, FaInstagram } from 'react-icons/fa'
 import { RiTwitterXFill } from 'react-icons/ri'
+import Subscribe from './Subscribe'
+import line from '/Common Images/TOP_line.png'
 
 
 const Footer = () => {
   return (
-    <footer className='bg-Masked-bg pt-[349px] pb-[144px]'>
-      <Container>
+    <footer className='bg-Masked-bg pt-[349px] pb-[144px] relative'>
+      <Subscribe className='absolute left-1/2 translate-x-[-50%] top-0 translate-y-[-50%] z-40' />
+      <Container className='relative'>
         <div className="main flex items-center w-full">
+          <div className='absolute z-50 bottom-full translate-y-[-79px] left-full translate-x-[158px] flex flex-col items-center gap-1'>
+            <div className="line w-[1px] h-[61px]">
+              <img src={line} alt="" className='w-full h-full'/>
+            </div>
+            <div className='text-[#DCCA87] text-base font-bold font-Cormorant leading-[175%] tracking-[0.64px]'>
+              <a href="#">TOP</a>
+            </div>
+          </div>
           <div className="contacts">
             <ul className='flex flex-col justify-center items-center'>
               <H3 className='text-[#F5EFDB]'>
