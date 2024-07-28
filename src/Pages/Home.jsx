@@ -11,6 +11,7 @@ import line from '/Common Images/TOP_line.png'
 import G from '/Home Images/AboutG.png'
 import Knife from '/Home Images/Knife.png'
 import Rotating from '../Components/Rotating'
+import { FaAngleDown } from 'react-icons/fa'
 
 const Home = () => {
   return (
@@ -90,6 +91,38 @@ const Home = () => {
             </div>
           </div>
           <Rotating className='top-full translate-y-[104px] left-full translate-x-[13px] '/>
+        </Container>
+      </section>
+
+      {/* Reservation */}
+      <section id="reservation" className='pt-[152px]'>
+        <Container className='py-12 px-8 border border-[#dcca8733] shadow-[22px_30px_95px_1px_rgba(1, 1, 1, 1)] flex flex-col justify-center items-center gap-16'>
+          <div className="title flex flex-col items-center justify-center gap-2">
+            <H5>
+            Reservations
+            </H5>
+            <Spoon />
+            <H2>
+            Book A Table
+            </H2>
+          </div>
+          <div className="info flex items-center gap-8 w-full">
+            <div className="person w-full relative">
+              <input type="text" name="" id="" placeholder='1 Person' className='w-full bg-transparent p-4 border border-[#F5EFDB] text-base text-[#AAA] font-Cormorant font-semibold leading-[175%] tracking-[0.64px] capitalize outline-none cursor-pointer'/>
+              <FaAngleDown  className='text-2xl text-[#AAA] absolute top-1/2 translate-y-[-50%] right-4 cursor-pointer'/> 
+            </div>
+            <div className="person w-full relative">
+              <input type="text" name="" id="" placeholder='12/05/2021' className='w-full bg-transparent p-4 border border-[#F5EFDB] text-base text-[#AAA] font-Cormorant font-semibold leading-[175%] tracking-[0.64px] capitalize outline-none cursor-pointer'/>
+              <FaAngleDown  className='text-2xl text-[#AAA] absolute top-1/2 translate-y-[-50%] right-4 cursor-pointer'/>
+            </div>
+            <div className="person w-full relative">
+              <input type="text" name="" id="" placeholder='11:00 AM' className='w-full bg-transparent p-4 border border-[#F5EFDB] text-base text-[#AAA] font-Cormorant font-semibold leading-[175%] tracking-[0.64px] capitalize outline-none cursor-pointer'/>
+              <FaAngleDown  className='text-2xl text-[#AAA] absolute top-1/2 translate-y-[-50%] right-4 cursor-pointer'/>
+            </div>
+          </div>
+          <Button>
+          Book Now
+          </Button>
         </Container>
       </section>
 
