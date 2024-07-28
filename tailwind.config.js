@@ -13,6 +13,7 @@ export default {
 
     backgroundImage: {
       'Masked-bg': "url('/Common Images/MaskedBG.png')",
+      'Masked': "url('/Common Images/Maskedbg-1.png')",
     },
 
     animation: {

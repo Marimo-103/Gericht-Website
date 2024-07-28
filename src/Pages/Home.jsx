@@ -4,16 +4,20 @@ import H5 from '../Layers/H5'
 import Spoon from '../Components/Spoon'
 import Button from '../Components/Button'
 import H1 from '../Layers/H1'
+import H2 from '../Layers/H2'
 import P from '../Layers/P'
 import Fade from '../Components/Fade'
 import line from '/Common Images/TOP_line.png'
+import G from '/Home Images/AboutG.png'
+import Knife from '/Home Images/Knife.png'
+import Rotating from '../Components/Rotating'
 
 const Home = () => {
   return (
     <div>
 
       {/* Intro banner */}
-      <section id="banner" className='pt-12'>
+      <section id="banner" className='pt-12 pb-[244px]'>
         <Container className='flex items-center justify-between relative'>
           <div className="text">
             <H5>
@@ -51,9 +55,41 @@ const Home = () => {
       </section>
 
       {/* About Us */}
-      <section id="about" className='pt-[244px]'>
-        <Container>
-
+      <section id="about" className='bg-Masked py-32'>
+        <Container className='relative'>
+          <div className="G absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-0">
+            <img src={G} alt="" />
+          </div>
+          <div className="main flex items-center justify-between relative z-50">
+            <div className="left flex flex-col items-center text-end">
+              <H2 className='ml-auto'>
+              About Us
+              </H2>
+              <Spoon className='my-2 ml-auto rotate-[180deg]'/>
+              <P className='my-8'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis<br /> pharetra adipiscing ultrices vulputate posuere tristique. In sed<br /> odio nec aliquet eu proin mauris et.
+              </P>
+              <Button className='ml-auto'>
+              Know More
+              </Button>
+            </div>
+            <div className="knife w-[84px]">
+              <img src={Knife} alt="" />
+            </div>
+            <div className="right">
+              <H2>
+              Our History
+              </H2>
+              <Spoon className='my-2'/>
+              <P className='my-8'>
+              Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat.<br /> Risus placerat morbi volutpat habitasse interdum mi aliquam In<br /> sed odio nec aliquet.
+              </P>
+              <Button>
+              Know More
+              </Button>
+            </div>
+          </div>
+          <Rotating className='top-full translate-y-[104px] left-full translate-x-[13px] '/>
         </Container>
       </section>
 
