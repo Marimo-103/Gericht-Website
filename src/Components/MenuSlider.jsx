@@ -2,12 +2,12 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import slide01 from '/Home Images/introSlider_img-1.jpg'
-import slide02 from '/Home Images/introSlider_img-2.jpg'
-import slide03 from '/Home Images/introSlider_img-3.jpg'
+import slide01 from '/Home Images/menuSlider_img-1.png'
+import slide02 from '/Home Images/menuSlider_img-2.png'
+import slide03 from '/Home Images/menuSlider_img-3.png'
 
 
-function Fade() {
+function MenuSlider({className}) {
   const settings = {
     dots: false,
     arrows: false,
@@ -21,20 +21,20 @@ function Fade() {
     cssEase: "linear",
   };
   return (
-    <div className="slider-container">
+    <div className={`slider-container ${className}`}>
       <Slider {...settings}>
         <div>
-          <img src={slide01} />
+          <img src={slide01} className="w-full h-full block"/>
         </div>
         <div>
-          <img src={slide02} />
+          <img src={slide02} className="w-full h-full block"/>
         </div>
         <div>
-          <img src={slide03} />
+          <img src={slide03} className="w-full h-full block"/>
         </div>
       </Slider>
     </div>
   );
 }
 
-export default Fade;
+export default MenuSlider;

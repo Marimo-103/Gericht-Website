@@ -9,11 +9,12 @@ export default {
     fontFamily: {
       'Open-Sans': ['Open Sans', 'sans-serif'],
       'Cormorant': ['Cormorant Upright', 'serif'],
+      'Bestermind': ['Bestermind', 'sans-serif'],
     },
 
     backgroundImage: {
       'Masked-bg': "url('/Common Images/MaskedBG.png')",
-      'Masked': "url('/Common Images/Maskedbg-1.png')",
+      'Masked': "url('/Common Images/Maskedbg-1.png')"
     },
 
     animation: {

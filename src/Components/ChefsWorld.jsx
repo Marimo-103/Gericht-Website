@@ -2,12 +2,11 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import slide01 from '/Home Images/introSlider_img-1.jpg'
-import slide02 from '/Home Images/introSlider_img-2.jpg'
-import slide03 from '/Home Images/introSlider_img-3.jpg'
+import slide01 from '/Home Images/Chef-1.png'
+import slide02 from '/Home Images/Chef-2.png'
 
 
-function Fade() {
+function ChefsWorld({className}) {
   const settings = {
     dots: false,
     arrows: false,
@@ -17,24 +16,22 @@ function Fade() {
     slidesToScroll: 1,
     waitForAnimate: false,
     autoplay: true,
-    autoplaySpeed: 1900,
+    autoplaySpeed: 2000,
     cssEase: "linear",
+    pauseOnHover: true,
   };
   return (
-    <div className="slider-container">
+    <div className={`slider-container ${className}`}>
       <Slider {...settings}>
         <div>
-          <img src={slide01} />
+          <img src={slide01} className="w-full h-full block"/>
         </div>
         <div>
-          <img src={slide02} />
-        </div>
-        <div>
-          <img src={slide03} />
+          <img src={slide02} className="w-full h-full block"/>
         </div>
       </Slider>
     </div>
   );
 }
 
-export default Fade;
+export default ChefsWorld;
