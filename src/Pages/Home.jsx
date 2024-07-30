@@ -18,7 +18,19 @@ import Blender from '/Home Images/TodaysMenu.png'
 import ChefsWorld from '../Components/ChefsWorld'
 import Video from '/Home Images/Video.png'
 import Play from '/Home Images/Play.png'
-
+import Customer01 from '/Home Images/Customer-1.png'
+import Customer02 from '/Home Images/Customer-2.png'
+import Customer03 from '/Home Images/Customer-3.png'
+import Customer04 from '/Home Images/Customer-4.png'
+import Awards from '/Home Images/Gallery_img.png'
+import award01 from '/Home Images/1st_prize.png'
+import award02 from '/Home Images/2nd_prize.png'
+import award03 from '/Home Images/3rd_prize.png'
+import award05 from '/Home Images/5th_prize.png'
+import Blog01 from '/Home Images/blog-01.png'
+import Blog02 from '/Home Images/blog-02.png'
+import Blog03 from '/Home Images/blog-03.png'
+import { Link } from 'react-router-dom'
 
 
 const Home = () => {
@@ -377,6 +389,89 @@ const Home = () => {
         </Container>
       </section>
 
+      {/* Testimony */}
+      <section id="testimony" className='pt-[152px]'>
+        <Container className='flex flex-col items-center justify-center gap-16'>
+          <div className="title flex flex-col items-center justify-center gap-2">
+            <H5>
+            Testimony
+            </H5>
+            <Spoon />
+            <H2>
+            Happy customers
+            </H2>
+          </div>
+          <div className="top flex items-center gap-8">
+            <div className="child flex items-center gap-4">
+              <div className="img w-[206px] h-[210px]">
+                <img src={Customer01} alt=""  className='w-full h-full block'/>
+              </div>
+              <div className="text">
+                <P className='mb-4 italic'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing<br /> sit. auctor sit iaculis in arcu. Vulputate nulla lobortis<br /> mauris eget sit. Nulla scelerisque scelerisque congue.
+                </P>
+                <H3>
+                Wade Warren
+                </H3>
+                <P className='text-[#F5EFDB]'>
+                Sommelier
+                </P>
+              </div>
+            </div>
+            <div className="child flex items-center gap-4">
+              <div className="img w-[206px] h-[210px]">
+                <img src={Customer02} alt=""  className='w-full h-full block'/>
+              </div>
+              <div className="text">
+                <P className='mb-4 italic'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing<br /> sit. auctor sit iaculis in arcu. Vulputate nulla lobortis<br /> mauris eget sit. Nulla scelerisque scelerisque congue.
+                </P>
+                <H3>
+                Jane Cooper
+                </H3>
+                <P className='text-[#F5EFDB]'>
+                Chef
+                </P>
+              </div>
+            </div>
+          </div>
+          <div className="bottom flex items-center gap-8">
+            <div className="child flex items-center gap-4">
+              <div className="img w-[206px] h-[210px]">
+                <img src={Customer03} alt=""  className='w-full h-full block'/>
+              </div>
+              <div className="text">
+                <P className='mb-4 italic'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing<br /> sit. auctor sit iaculis in arcu. Vulputate nulla lobortis<br /> mauris eget sit. Nulla scelerisque scelerisque congue.
+                </P>
+                <H3>
+                Robert Fox
+                </H3>
+                <P className='text-[#F5EFDB]'>
+                Chef
+                </P>
+              </div>
+            </div>
+            <div className="child flex items-center gap-4">
+              <div className="img w-[206px] h-[210px]">
+                <img src={Customer04} alt=""  className='w-full h-full block'/>
+              </div>
+              <div className="text">
+                <P className='mb-4 italic'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing<br /> sit. auctor sit iaculis in arcu. Vulputate nulla lobortis<br /> mauris eget sit. Nulla scelerisque scelerisque congue.
+                </P>
+                <H3>
+                Brooklyn Simmons
+                </H3>
+                <P className='text-[#F5EFDB]'>
+                Caterer
+                </P>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
       {/* video */}
       <section id="video" className='pt-[152px]'>
         <Container className='max-w-[1920px] relative after:content-[""] after:w-full after:h-full after:absolute after:top-0 after:left-0 after:bg-[#0c0c0c66]'>
@@ -387,6 +482,187 @@ const Home = () => {
           <img src={Play} alt=""/>
           </div>
           <Rotating  className='top-[147px] left-[197px] z-30'/>
+        </Container>
+      </section>
+
+      {/* awards */}
+      <section id="awards" className='bg-Masked bg-cover py-32'>
+        <Container className='flex items-center gap-[111px]'>
+          <div className="text flex flex-col justify-center gap-16">
+          <div className="title flex flex-col justify-center gap-2">
+            <H5>
+            Awards & recognition
+            </H5>
+            <Spoon />
+            <H2>
+            Our Laurels
+            </H2>
+          </div>
+          <div className="top flex items-center gap-8">
+            <div className="child flex items-center gap-8">
+              <div className="img w-[79px] h-[79px]">
+                <img src={award02} alt="" className='w-full h-full'/>
+              </div>
+              <div className="info">
+                <div className='text-[#DCCA87] text-[23px] font-Cormorant font-bold leading-[130%] tracking-[0.92px] capitalize mb-2'>
+                Bib Gourmond
+                </div>
+                <P>
+                Lorem ipsum dolor sit<br /> amet, consectetur.
+                </P>
+              </div>
+            </div>
+            <div className="child flex items-center gap-8">
+              <div className="img w-[79px] h-[79px]">
+                <img src={award01} alt="" className='w-full h-full'/>
+              </div>
+              <div className="info">
+                <div className='text-[#DCCA87] text-[23px] font-Cormorant font-bold leading-[130%] tracking-[0.92px] capitalize mb-2'>
+                Rising Star
+                </div>
+                <P>
+                Lorem ipsum dolor sit<br /> amet, consectetur.
+                </P>
+              </div>
+            </div>
+          </div>
+          <div className="bottom flex items-center gap-8">
+            <div className="child flex items-center gap-8">
+              <div className="img w-[79px] h-[79px]">
+                <img src={award05} alt="" className='w-full h-full'/>
+              </div>
+              <div className="info">
+                <div className='text-[#DCCA87] text-[23px] font-Cormorant font-bold leading-[130%] tracking-[0.92px] capitalize mb-2'>
+                AA Hospitality 
+                </div>
+                <P>
+                Lorem ipsum dolor sit<br /> amet, consectetur.
+                </P>
+              </div>
+            </div>
+            <div className="child flex items-center gap-8">
+              <div className="img w-[79px] h-[79px]">
+                <img src={award03} alt="" className='w-full h-full'/>
+              </div>
+              <div className="info">
+                <div className='text-[#DCCA87] text-[23px] font-Cormorant font-bold leading-[130%] tracking-[0.92px] capitalize mb-2'>
+                Outstanding Chef
+                </div>
+                <P>
+                Lorem ipsum dolor sit<br /> amet, consectetur.
+                </P>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div className="img w-[555px] h-[691px]">
+            <img src={Awards} alt=""  className='h-full w-full'/>
+          </div>
+        </Container>
+      </section>
+
+      {/* blog */}
+      <section id="blog" className='pt-[152px]'>
+        <Container className='relative flex flex-col justify-center items-center gap-16'>
+          <div className="title flex flex-col justify-center items-center gap-2">
+            <H5>
+            Blogs
+            </H5>
+            <Spoon />
+            <H2>
+            Gerícht updates
+            </H2>
+          </div>
+          <div className="blog_main flex items-center justify-center gap-8">
+            <div className="child flex flex-col justify-center items-center gap-6">
+              <div className="img w-[412px] h-[430px]">
+                <img src={Blog01} alt="" className='w-full block'/>
+              </div>
+              <div className="info flex flex-col gap-8 justify-start">
+                <div className="flex justify-between items-center">
+                  <P className='text-[#FAFAFA]'>
+                  16 Apr 2021
+                  </P>
+                  <P className='text-[#FAFAFA]'>
+                  - Annalisa L
+                  </P>
+                </div>
+                <Link to='/blogdetails'>
+                <H3 className='hover:underline'>
+                tips for prepping and caring<br /> for your grill
+                </H3>
+                </Link>
+                <P>
+                Lorem ipsum dolor sit amet, consectetur<br /> adipiscing elit. Volutpat mattis ipsum turpis elit elit<br /> scelerisque egestas mus in.
+                </P>
+                <Link to='/blog'>
+                <div className='text-[#DCCA87] font-Cormorant text-base font-bold leading-[175%] tracking-[0.64px]'>
+                Read More
+                </div>
+                </Link>
+              </div>
+            </div>
+            <div className="child flex flex-col justify-center items-center gap-6">
+              <div className="img w-[412px] h-[430px]">
+                <img src={Blog02} alt="" className='w-full block'/>
+              </div>
+              <div className="info flex flex-col gap-8 justify-start">
+                <div className="flex justify-between items-center">
+                  <P className='text-[#FAFAFA]'>
+                  23 May 2021
+                  </P>
+                  <P className='text-[#FAFAFA]'>
+                  - John Micheal
+                  </P>
+                </div>
+                <Link to='/blogdetails'>
+                <H3 className='hover:underline'>
+                summer cocktails and<br /> mocktails
+                </H3>
+                </Link>
+                <P>
+                Lorem ipsum dolor sit amet, consectetur<br /> adipiscing elit. Volutpat mattis ipsum turpis elit elit<br /> scelerisque egestas mus in.
+                </P>
+                <Link to='/blog'>
+                <div className='text-[#DCCA87] font-Cormorant text-base font-bold leading-[175%] tracking-[0.64px]'>
+                Read More
+                </div>
+                </Link>
+              </div>
+            </div>
+            <div className="child flex flex-col justify-center items-center gap-6">
+              <div className="img w-[412px] h-[430px]">
+                <img src={Blog03} alt="" className='w-full block'/>
+              </div>
+              <div className="info flex flex-col gap-8 justify-start">
+                <div className="flex justify-between items-center">
+                  <P className='text-[#FAFAFA]'>
+                  06 Aug 2021
+                  </P>
+                  <P className='text-[#FAFAFA]'>
+                  - Fred W
+                  </P>
+                </div>
+                <Link to='/blogdetails'>
+                <H3 className='hover:underline'>
+                easy cooking for college<br /> students
+                </H3>
+                </Link>
+                <P>
+                Lorem ipsum dolor sit amet, consectetur<br /> adipiscing elit. Volutpat mattis ipsum turpis elit elit<br /> scelerisque egestas mus in.
+                </P>
+                <Link to='/blog'>
+                <div className='text-[#DCCA87] font-Cormorant text-base font-bold leading-[175%] tracking-[0.64px]'>
+                Read More
+                </div>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <Button>
+          View More
+          </Button>
+          <Rotating className='bottom-[-29px] left-full translate-x-[20px]'/>
         </Container>
       </section>
 

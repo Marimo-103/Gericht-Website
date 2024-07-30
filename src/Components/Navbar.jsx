@@ -42,7 +42,7 @@ const Navbar = () => {
             <img src={line} alt="" className='h-full'/>
           </div>
           <div className="table">
-          <Link to='' className='text-base text-white font-Open-Sans font-semibold leading-[175%] tracking-[0.8px] capitalize transition-all duration-300 hover:text-[#DCCA87]'>book table </Link>
+          <a href='#reservation' className='text-base text-white font-Open-Sans font-semibold leading-[175%] tracking-[0.8px] capitalize transition-all duration-300 hover:text-[#DCCA87]'>book table </a>
           </div>
         </div>
         <MdRestaurantMenu className='sm:hidden text-[#DCCA87] text-lg hover:text-white transition-all duration-300' />
