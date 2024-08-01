@@ -31,6 +31,8 @@ import Blog01 from '/Home Images/blog-01.png'
 import Blog02 from '/Home Images/blog-02.png'
 import Blog03 from '/Home Images/blog-03.png'
 import { Link } from 'react-router-dom'
+import PhotoGallery from '../Components/PhotoGallery'
+import gallery from '/Home Images/Gallery.png'
 
 
 const Home = () => {
@@ -91,7 +93,9 @@ const Home = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis<br /> pharetra adipiscing ultrices vulputate posuere tristique. In sed<br /> odio nec aliquet eu proin mauris et.
               </P>
               <Button className='ml-auto'>
+              <Link to='/about'>
               Know More
+              </Link>
               </Button>
             </div>
             <div className="knife w-[84px]">
@@ -562,7 +566,7 @@ const Home = () => {
       </section>
 
       {/* blog */}
-      <section id="blog" className='pt-[152px]'>
+      <section id="blog" className='py-[152px]'>
         <Container className='relative flex flex-col justify-center items-center gap-16'>
           <div className="title flex flex-col justify-center items-center gap-2">
             <H5>
@@ -663,6 +667,33 @@ const Home = () => {
           View More
           </Button>
           <Rotating className='bottom-[-29px] left-full translate-x-[20px]'/>
+        </Container>
+      </section>
+
+      {/* photo gallery */}
+      <section id="gallery" className='bg-Masked bg-cover'>
+        <Container className='max-w-[1920px] pl-[310px] flex items-center gap-16 py-32'>
+          <div className="text flex flex-col gap-6 items-start justify-start">
+            <div className="title flex flex-col justify-start items-start gap-2">
+              <H5>
+              Instagram
+              </H5>
+              <Spoon />
+              <H2>
+              Photo Gallery
+              </H2>
+            </div>
+            <P>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /> Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.
+            </P>
+            <Button>
+            View More
+            </Button>
+          </div>
+          <div className="photoGallery h-[447px]">
+            {/* <PhotoGallery className='w-full'/> */}
+            <img src={gallery} alt="" />
+          </div>
         </Container>
       </section>
 

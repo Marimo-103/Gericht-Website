@@ -19,7 +19,7 @@ const Navbar = () => {
           <ul className='sm:flex gap-x-8 hidden'>
             <Li value='Home' to='/' />
             <Li value='Pages' to='/' className='relative group'>
-              <HoverUL>
+              <HoverUL className='z-50'>
                 <HoverLi value='About Us' to='/about' />
                 <HoverLi value='Services' to='/service' />
                 <HoverLi value='Our Team' to='/team' />
