@@ -1,7 +1,6 @@
 import React from 'react'
 import Container from '../Layers/Container'
 import H5 from '../Layers/H5'
-import H3 from '../Layers/H3'
 import Spoon from '../Components/Spoon'
 import Button from '../Components/Button'
 import H1 from '../Layers/H1'
