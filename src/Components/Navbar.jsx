@@ -29,7 +29,7 @@ const Navbar = () => {
             </Li>
             <Li value='Contact Us' to='/contact' />
             <Li value='Blog' to='/blog' />
-            <Li value='Landing' to='/404' />
+            <Li value='Landing' to='/commingsoon' />
           </ul>
         </div>
         <div className="btns hidden sm:flex gap-[50px] items-center text-white">

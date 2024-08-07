@@ -1,0 +1,9 @@
+.accordion-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+
+  .accordion-item:hover .accordion-answer {
+    max-height: 200px; /* Adjust based on your content */
+  }
