@@ -72,7 +72,7 @@ const Team = () => {
                   </div>
                   <div className='flex items-center gap-2'>
                     <div className="line w-4 h-[1px] bg-[#DCCA87]"></div>
-                    <Link className='text-base text-[#DCCA87] font-Cormorant font-bold leading-[175%] tracking-[0.64px]'>
+                    <Link to='/chefdetails' className='text-base text-[#DCCA87] font-Cormorant font-bold leading-[175%] tracking-[0.64px]'>
                     Read More
                     </Link>
                   </div>
@@ -104,7 +104,7 @@ const Team = () => {
                   </div>
                   <div className='flex items-center gap-2'>
                     <div className="line w-4 h-[1px] bg-[#DCCA87]"></div>
-                    <Link className='text-base text-[#DCCA87] font-Cormorant font-bold leading-[175%] tracking-[0.64px]'>
+                    <Link to='/chefdetails' className='text-base text-[#DCCA87] font-Cormorant font-bold leading-[175%] tracking-[0.64px]'>
                     Read More
                     </Link>
                   </div>
@@ -136,7 +136,7 @@ const Team = () => {
                   </div>
                   <div className='flex items-center gap-2'>
                     <div className="line w-4 h-[1px] bg-[#DCCA87]"></div>
-                    <Link className='text-base text-[#DCCA87] font-Cormorant font-bold leading-[175%] tracking-[0.64px]'>
+                    <Link to='/chefdetails' className='text-base text-[#DCCA87] font-Cormorant font-bold leading-[175%] tracking-[0.64px]'>
                     Read More
                     </Link>
                   </div>
@@ -170,7 +170,7 @@ const Team = () => {
                   </div>
                   <div className='flex items-center gap-2'>
                     <div className="line w-4 h-[1px] bg-[#DCCA87]"></div>
-                    <Link className='text-base text-[#DCCA87] font-Cormorant font-bold leading-[175%] tracking-[0.64px]'>
+                    <Link to='/chefdetails' className='text-base text-[#DCCA87] font-Cormorant font-bold leading-[175%] tracking-[0.64px]'>
                     Read More
                     </Link>
                   </div>
@@ -202,7 +202,7 @@ const Team = () => {
                   </div>
                   <div className='flex items-center gap-2'>
                     <div className="line w-4 h-[1px] bg-[#DCCA87]"></div>
-                    <Link className='text-base text-[#DCCA87] font-Cormorant font-bold leading-[175%] tracking-[0.64px]'>
+                    <Link to='/chefdetails' className='text-base text-[#DCCA87] font-Cormorant font-bold leading-[175%] tracking-[0.64px]'>
                     Read More
                     </Link>
                   </div>
@@ -234,7 +234,7 @@ const Team = () => {
                   </div>
                   <div className='flex items-center gap-2'>
                     <div className="line w-4 h-[1px] bg-[#DCCA87]"></div>
-                    <Link className='text-base text-[#DCCA87] font-Cormorant font-bold leading-[175%] tracking-[0.64px]'>
+                    <Link to='/chefdetails' className='text-base text-[#DCCA87] font-Cormorant font-bold leading-[175%] tracking-[0.64px]'>
                     Read More
                     </Link>
                   </div>
