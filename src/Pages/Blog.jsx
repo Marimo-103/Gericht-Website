@@ -2,38 +2,16 @@ import React from 'react'
 import Container from '../Layers/Container'
 import H5 from '../Layers/H5'
 import H3 from '../Layers/H3'
-import Spoon from '../Components/Spoon'
 import Button from '../Components/Button'
 import H1 from '../Layers/H1'
-import H2 from '../Layers/H2'
 import P from '../Layers/P'
-import Fade from '../Components/Fade'
-import line from '/Common Images/TOP_line.png'
-import G from '/Home Images/AboutG.png'
-import Knife from '/Home Images/Knife.png'
 import Rotating from '../Components/Rotating'
 import { FaFacebookF, FaInstagram } from 'react-icons/fa'
-import MenuSlider from '../Components/MenuSlider'
-import Blender from '/Home Images/TodaysMenu.png'
-import ChefsWorld from '../Components/ChefsWorld'
-import Video from '/Home Images/Video.png'
-import Play from '/Home Images/Play.png'
-import Customer01 from '/Home Images/Customer-1.png'
-import Customer02 from '/Home Images/Customer-2.png'
-import Customer03 from '/Home Images/Customer-3.png'
-import Customer04 from '/Home Images/Customer-4.png'
-import Awards from '/Home Images/Gallery_img.png'
-import award01 from '/Home Images/1st_prize.png'
-import award02 from '/Home Images/2nd_prize.png'
-import award03 from '/Home Images/3rd_prize.png'
-import award05 from '/Home Images/5th_prize.png'
 import Blog01 from '/Blog Images/Blog-1.png'
 import Blog02 from '/Blog Images/Blog-2.png'
 import Blog03 from '/Blog Images/Blog-3.png'
 import Blog04 from '/Blog Images/Blog-4.png'
 import { Link } from 'react-router-dom'
-import PhotoGallery from '../Components/PhotoGallery'
-import gallery from '/Home Images/Gallery.png'
 import { IoIosArrowForward } from 'react-icons/io'
 import CommonSlider from '../Components/CommonSlider'
 import { MdSearch } from 'react-icons/md'
@@ -55,7 +33,7 @@ const Blog = () => {
             <H5>Home</H5>
             </Link>
             <IoIosArrowForward className='text-[#DCCA87] text-2xl'/>
-            <Link to='/service'>
+            <Link to='/blog'>
             <H5>Our Blogs- With sidebar</H5>
             </Link>
             </div>
