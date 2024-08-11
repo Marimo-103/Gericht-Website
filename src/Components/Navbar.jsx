@@ -13,7 +13,7 @@ import line from '/Common Images/Menu_line.png'
 const Navbar = () => {
   return (
     <nav>
-      <Container className='max-w-[1440px] sm:py-8 sm:px-[0px] p-4 flex justify-between items-center'>
+      <Container className='max-w-[1440px] sm:py-8 sm:px-[0px] lg:p-2 lg: p-4 flex justify-between items-center'>
         <Logo src={Logo_img} />
         <div className="menu">
           <ul className='sm:flex gap-x-8 hidden'>
@@ -32,17 +32,17 @@ const Navbar = () => {
             <Li value='Landing' to='/commingsoon' />
           </ul>
         </div>
-        <div className="btns hidden sm:flex gap-[50px] items-center text-white">
-          <div className="user text-base text-white font-Open-Sans font-semibold leading-[175%] tracking-[0.8px] capitalize transition-all duration-300 hover:text-[#DCCA87]">
+        <div className="btns hidden sm:flex gap-[50px] lg:gap-5 items-center text-white">
+          <div className="user text-base lg:text-xs text-white font-Open-Sans font-semibold leading-[175%] tracking-[0.8px] capitalize transition-all duration-300 hover:text-[#DCCA87]">
             <Link to='/login' className=''>Log in </Link>
             / 
             <Link to='/login' className=''> registration</Link>
           </div>
-          <div className="line w-[2px] h-[57px]">
+          <div className="line w-[2px] h-[57px] lg:h-[37]">
             <img src={line} alt="" className='h-full'/>
           </div>
           <div className="table">
-          <a href='#reservation' className='text-base text-white font-Open-Sans font-semibold leading-[175%] tracking-[0.8px] capitalize transition-all duration-300 hover:text-[#DCCA87]'>book table </a>
+          <a href='#reservation' className='text-base lg:text-xs text-white font-Open-Sans font-semibold leading-[175%] tracking-[0.8px] capitalize transition-all duration-300 hover:text-[#DCCA87]'>book table </a>
           </div>
         </div>
         <MdRestaurantMenu className='sm:hidden text-[#DCCA87] text-lg hover:text-white transition-all duration-300' />

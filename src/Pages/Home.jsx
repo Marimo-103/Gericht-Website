@@ -40,25 +40,25 @@ const Home = () => {
     <div>
 
       {/* Intro banner */}
-      <section id="banner" className='pt-12 pb-[244px]'>
+      <section id="banner" className='sm:pt-12 sm:pb-[244px] pt-16 pb-20'>
         <Container className='flex items-center justify-between relative'>
           <div className="text">
             <H5>
             Chase the new Flavour
             </H5>
-            <Spoon className='my-2' />
+            <Spoon className='sm:my-2 ' />
             <H1>
-            The key to<br /> Fine dining
+            The key to<br className='hidden sm:block'/> Fine dining
             </H1>
-            <P className='my-8'>
-            Sit tellus lobortis sed senectus vivamus molestie.<br /> Condimentum volutpat morbi facilisis quam scelerisque<br /> sapien. Et, penatibus aliquam amet tellus 
+            <P className='sm:my-8 my-10'>
+            Sit tellus lobortis sed senectus vivamus molestie.<br className='hidden sm:block'/> Condimentum volutpat morbi facilisis quam scelerisque<br className='hidden sm:block'/> sapien. Et, penatibus aliquam amet tellus 
             </P>
-            <Button>
+            <Button className='sm:m-0 mx-auto'>
             Explore Menu
             </Button>
           </div>
-          <div className="slider_main w-[667px] h-[736px] relative after:content-[''] after:w-[435px] after:h-[435px] after:bg-[#DCCA87] after:absolute after:bottom-0 after:left-0 after:z-[-2] before:content-[''] before:w-[435px] before:h-[435px] before:bg-[#DCCA87] before:absolute before:top-0 before:right-0 before:z-[-2] ">
-            <div className="slider_box w-[619px] h-[688px] bg-[#ff9e02] absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-[2]">
+          <div className="slider_main sm:w-[667px] sm:h-[736px] hidden sm:block relative after:content-[''] sm:after:w-[435px] sm:after:h-[435px] after:bg-[#DCCA87] after:absolute after:bottom-0 after:left-0 after:z-[-2] before:content-[''] sm:before:w-[435px] sm:before:h-[435px] before:bg-[#DCCA87] before:absolute before:top-0 before:right-0 before:z-[-2] ">
+            <div className="slider_box sm:w-[619px] sm:h-[688px] bg-[#ff9e02] absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-[2]">
             <Fade />
             </div>
           </div>
@@ -66,7 +66,7 @@ const Home = () => {
             <p className='text-lg text-white font-Open-Sans font-normal leading-[175%] tracking-[0.72px]'>#Bar</p>
             <p className='text-lg text-white font-Open-Sans font-normal leading-[175%] tracking-[0.72px]'>#Gericht</p>
           </div>
-          <div className='absolute z-50 bottom-0 translate-y-[92px] left-full translate-x-[129px] flex flex-col items-center gap-6'>
+          <div className='absolute hidden z-50 bottom-0 translate-y-[92px] left-full translate-x-[129px] sm:flex flex-col items-center gap-6'>
             <div className="line w-[1px] h-[61px]">
               <img src={line} alt="" className='w-full h-full'/>
             </div>
@@ -78,38 +78,38 @@ const Home = () => {
       </section>
 
       {/* About Us */}
-      <section id="about" className='bg-Masked py-32'>
+      <section id="about" className='bg-Masked sm:py-32 py-12'>
         <Container className='relative'>
-          <div className="G absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-0">
+          <div className="G sm:block hidden absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-0">
             <img src={G} alt="" />
           </div>
-          <div className="main flex items-center justify-between relative z-50">
-            <div className="left flex flex-col items-center text-end">
-              <H2 className='ml-auto'>
+          <div className="main flex flex-col sm:flex-row items-center sm:justify-between justify-center gap-8 relative z-50">
+            <div className="left flex flex-col items-center sm:text-end">
+              <H2 className='sm:ml-auto mr-auto'>
               About Us
               </H2>
-              <Spoon className='my-2 ml-auto rotate-[180deg]'/>
-              <P className='my-8'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis<br /> pharetra adipiscing ultrices vulputate posuere tristique. In sed<br /> odio nec aliquet eu proin mauris et.
+              <Spoon className='my-2 sm:ml-auto mr-auto sm:rotate-[180deg]'/>
+              <P className='sm:my-8 my-6 sm:ml-auto mr-auto'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis<br className='hidden sm:block'/> pharetra adipiscing ultrices vulputate posuere tristique. In sed<br className='hidden sm:block'/> odio nec aliquet eu proin mauris et.
               </P>
-              <Button className='ml-auto'>
+              <Button className='sm:ml-auto mr-auto'>
               <Link to='/about'>
               Know More
               </Link>
               </Button>
             </div>
-            <div className="knife w-[84px]">
+            <div className="knife w-[84px] sm:block hidden">
               <img src={Knife} alt="" />
             </div>
-            <div className="right">
+            <div className="right sm:text-start text-end">
               <H2>
               Our History
               </H2>
-              <Spoon className='my-2'/>
-              <P className='my-8'>
-              Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat.<br /> Risus placerat morbi volutpat habitasse interdum mi aliquam In<br /> sed odio nec aliquet.
+              <Spoon className='ml-auto sm:m-0 sm:rotate-[0deg] rotate-[180deg]'/>
+              <P className='sm:my-8 my-6'>
+              Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat.<br className='hidden sm:block'/> Risus placerat morbi volutpat habitasse interdum mi aliquam In<br className='hidden sm:block'/> sed odio nec aliquet.
               </P>
-              <Button>
+              <Button className='ml-auto sm:m-0'>
               Know More
               </Button>
             </div>
@@ -119,9 +119,9 @@ const Home = () => {
       </section>
 
       {/* Reservation */}
-      <section id="reservation" className='pt-[152px]'>
-        <Container className='py-12 px-8 border border-[#dcca8733] shadow-[22px_30px_95px_1px_rgba(1, 1, 1, 1)] flex flex-col justify-center items-center gap-16'>
-          <div className="title flex flex-col items-center justify-center gap-2">
+      <section id="reservation" className='sm:pt-[152px] pt-20'>
+        <Container className='sm:py-12 sm:px-8 py-8 px-4 border border-[#dcca8733] shadow-[22px_30px_95px_1px_rgba(1, 1, 1, 1)] flex flex-col justify-center items-center sm:gap-16 gap-12 sm:mx-auto mx-3'>
+          <div className="title flex flex-col items-center justify-center sm:gap-2 gap-1">
             <H5>
             Reservations
             </H5>
@@ -130,18 +130,18 @@ const Home = () => {
             Book A Table
             </H2>
           </div>
-          <div className="info flex items-center gap-8 w-full">
+          <div className="info flex sm:flex-row flex-col items-center sm:gap-8 gap-6 w-full ">
             <div className="person w-full relative">
               <input type="text" name="" id="" placeholder='1 Person' className='w-full bg-transparent p-4 border border-[#F5EFDB] text-base text-[#AAA] font-Cormorant font-semibold leading-[175%] tracking-[0.64px] capitalize outline-none cursor-pointer'/>
-              <FaAngleDown  className='text-2xl text-[#AAA] absolute top-1/2 translate-y-[-50%] right-4 cursor-pointer'/> 
+              <FaAngleDown  className='text-sm text-[#AAA] absolute top-1/2 translate-y-[-50%] right-4 cursor-pointer'/> 
             </div>
             <div className="person w-full relative">
               <input type="text" name="" id="" placeholder='12/05/2021' className='w-full bg-transparent p-4 border border-[#F5EFDB] text-base text-[#AAA] font-Cormorant font-semibold leading-[175%] tracking-[0.64px] capitalize outline-none cursor-pointer'/>
-              <FaAngleDown  className='text-2xl text-[#AAA] absolute top-1/2 translate-y-[-50%] right-4 cursor-pointer'/>
+              <FaAngleDown  className='text-sm text-[#AAA] absolute top-1/2 translate-y-[-50%] right-4 cursor-pointer'/>
             </div>
             <div className="person w-full relative">
               <input type="text" name="" id="" placeholder='11:00 AM' className='w-full bg-transparent p-4 border border-[#F5EFDB] text-base text-[#AAA] font-Cormorant font-semibold leading-[175%] tracking-[0.64px] capitalize outline-none cursor-pointer'/>
-              <FaAngleDown  className='text-2xl text-[#AAA] absolute top-1/2 translate-y-[-50%] right-4 cursor-pointer'/>
+              <FaAngleDown  className='text-sm text-[#AAA] absolute top-1/2 translate-y-[-50%] right-4 cursor-pointer'/>
             </div>
           </div>
           <Button>
@@ -151,10 +151,10 @@ const Home = () => {
       </section>
 
       {/* Menu */}
-      <section id="menu" className='pt-[184px]'>
+      <section id="menu" className='sm:pt-[184px] pt-20'>
         <Container className='max-w-[1920px] relative after:content-[""] after:w-full after:h-full after:bg-[#0c0c0c66] after:absolute after:top-0 after:left-0 z-0'>
           <MenuSlider className='w-full h-full'/>
-          <div className="text flex flex-col gap-16 absolute left-[145px] top-[261px] z-30 ">
+          <div className="text hidden sm:flex flex-col sm:gap-16 gap-4 absolute sm:left-[145px] sm:top-[261px] z-30 ">
             <H2 className='text-white hover:underline'>
             Bar Menu
             </H2>

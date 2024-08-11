@@ -24,13 +24,13 @@ function Fade() {
     <div className="slider-container">
       <Slider {...settings}>
         <div>
-          <img src={slide01} />
+          <img src={slide01} className="w-full h-full"/>
         </div>
         <div>
-          <img src={slide02} />
+          <img src={slide02} className="w-full h-full"/>
         </div>
         <div>
-          <img src={slide03} />
+          <img src={slide03} className="w-full h-full"/>
         </div>
       </Slider>
     </div>
