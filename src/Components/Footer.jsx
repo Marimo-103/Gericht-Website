@@ -12,11 +12,11 @@ import line from '/Common Images/TOP_line.png'
 
 const Footer = () => {
   return (
-    <footer className='bg-Masked-bg pt-[349px] pb-[144px] relative'>
+    <footer className='bg-Masked-bg sm:pt-[349px] sm:pb-[144px] py-8 relative'>
       <Subscribe className='absolute left-1/2 translate-x-[-50%] top-0 translate-y-[-50%] z-40' />
       <Container className='relative'>
-        <div className="main flex items-center w-full">
-          <div className='absolute z-50 bottom-full translate-y-[-79px] left-full translate-x-[158px] flex flex-col items-center gap-1'>
+        <div className="main flex flex-col sm:flex-row items-center sm:gap-0 gap-8 w-full">
+          <div className='absolute z-50 bottom-full translate-y-[-79px] left-full translate-x-[158px] hidden sm:flex flex-col items-center gap-1'>
             <div className="line w-[1px] h-[61px]">
               <img src={line} alt="" className='w-full h-full'/>
             </div>
@@ -40,8 +40,8 @@ const Footer = () => {
               </Link>
             </ul>
           </div>
-          <div className="logo flex flex-col items-center justify-center ml-[126px]">
-            <Link to='/' className='mb-8'>
+          <div className="logo flex flex-col items-center justify-center sm:ml-[126px]">
+            <Link to='/' className='sm:mb-8'>
               <div className='uppercase font-bold font-Cormorant leading-[130%] text-[64px] text-[#DCCA87] tracking-[2.56px]'>Gerícht</div>           
             </Link>
             <P className='text-center text-white'>
@@ -54,7 +54,7 @@ const Footer = () => {
             <FaInstagram />
             </div>
           </div>
-          <div className="work flex flex-col justify-center items-center ml-auto">
+          <div className="work flex flex-col justify-center items-center sm:ml-auto">
           <H3 className='text-[#F5EFDB]'>
             Working Hours
           </H3>
@@ -68,7 +68,7 @@ const Footer = () => {
           </P>
           </div>
         </div>
-        <P className='text-center mt-[80px]'>
+        <P className='text-center sm:mt-[80px] mt-10'>
         2021 Gerícht. All Rights reserved.
         </P>
       </Container>
