@@ -7,7 +7,7 @@ import P from '../Layers/P'
 
 const Subscribe = ({className}) => {
   return (
-    <div className={`subscribe bg-[#0C0C0C] py-16 px-[252px] flex flex-col items-center justify-center gap-16 border border-[#dcca8733] shadow-[22px_30px_95px_1px_rgba(1, 1, 1, 1)] ${className}`}>
+    <div className={`subscribe bg-[#0C0C0C] py-16 px-[252px] hidden sm:flex flex-col items-center justify-center gap-16 border border-[#dcca8733] shadow-[22px_30px_95px_1px_rgba(1, 1, 1, 1)] ${className}`}>
         <div className="title flex flex-col justify-center items-center">
             <H5>
                 newsletter

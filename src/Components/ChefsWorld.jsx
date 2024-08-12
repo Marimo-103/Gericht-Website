@@ -21,13 +21,13 @@ function ChefsWorld({className}) {
     pauseOnHover: true,
   };
   return (
-    <div className={`slider-container ${className}`}>
+    <div className={`slider-container  ${className}`}>
       <Slider {...settings}>
         <div>
-          <img src={slide01} className="w-full h-full block"/>
+          <img src={slide01} className="w-full h-full"/>
         </div>
         <div>
-          <img src={slide02} className="w-full h-full block"/>
+          <img src={slide02} className="w-full h-full"/>
         </div>
       </Slider>
     </div>

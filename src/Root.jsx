@@ -15,7 +15,7 @@ const Root = () => {
 
         {!hideFooterPaths.includes(location.pathname) && (
         <>
-          <div className='pt-[334px]'></div>
+          <div className='pt-[334px] sm:block hidden'></div>
           <Footer />
         </>
       )}
